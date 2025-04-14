@@ -4,7 +4,7 @@ The Genie AI extension enhances your browsing experience with smart features tai
 
 **Download Links:**
 - [Release Page](https://github.com/bytarch/genie-ai-extension/releases)
-- [Direct Download (v1.0.0)](https://github.com/bytarch/genie-ai-extension/releases/download/v1.0.0/genie_extension.zip)
+- [Direct Download (v1.0.0)](https://github.com/bytarch/genie-ai-extension/releases/download/v1.0.0/genie.crx)
 
 ## Installation Guide
 
