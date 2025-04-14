@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genie AI Extension by Bytarch LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+    <main class="container mx-auto px-4 py-20">
+        <h1 class="text-3xl font-bold mb-4">Genie AI Extension</h1>
+        <p>The Genie AI extension enhances your browsing experience with smart features tailored for efficiency and ease of use.</p>
+        
+        <h2 class="text-2xl font-semibold mt-8">Download Links:</h2>
+        <ul class="list-disc list-inside mb-4">
+            <li><a href="https://github.com/bytarch/genie-ai-extension/releases" class="text-blue-600 hover:underline" target="_blank">Release Page</a></li>
+            <li><a href="https://github.com/bytarch/genie-ai-extension/releases/download/v1.0.0/genie_extension.zip" class="text-blue-600 hover:underline" target="_blank">Direct Download (v1.0.0)</a></li>
+        </ul>
+
+        <p class="mt-4">
+            <span id="showImageText" class="text-blue-600 hover:underline cursor-pointer">Show Image</span>
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8">Useful Links:</h2>
+        <ul class="list-disc list-inside mb-4">
+            <li><a href="https://bytarch.netlify.app/" class="text-blue-600 hover:underline" target="_blank">Account Dashboard</a></li>
+            <li><a href="https://bytarch.taile6b163.ts.net/" class="text-blue-600 hover:underline" target="_blank">Genie WebApp</a></li>
+            <li><a href="https://console.bytarch.run.place/" class="text-blue-600 hover:underline" target="_blank">Developer API</a></li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8">Installation Guide</h2>
+        <h3 class="text-xl font-bold mt-4">Google Chrome</h3>
+        <ol class="list-decimal list-inside mb-4">
+            <li>Download the Genie AI extension zip file from the links above.</li>
+            <li>Extract the zip file to a folder on your computer.</li>
+            <li>Open Chrome and go to <a href="chrome://extensions/" class="text-blue-600 hover:underline">chrome://extensions/</a>.</li>
+            <li>Enable <strong>Developer mode</strong> by toggling the switch in the top right corner.</li>
+            <li>Click on <strong>Load unpacked</strong> and select the folder where you extracted the extension.</li>
+        </ol>
+        
+        <h3 class="text-xl font-bold mt-4">Mozilla Firefox</h3>
+        <ol class="list-decimal list-inside mb-4">
+            <li>Download the Genie AI extension zip file from the links above.</li>
+            <li>Extract the zip file to a folder on your computer.</li>
+            <li>Open Firefox and go to <a href="about:debugging#/runtime/this-firefox" class="text-blue-600 hover:underline">about:debugging#/runtime/this-firefox</a>.</li>
+            <li>Enable <strong>Enable add-on debugging</strong> if it's not already enabled.</li>
+            <li>Click on <strong>Load Temporary Add-on...</strong> and select the <code>manifest.json</code> file from the extracted folder.</li>
+        </ol>
+
+        <h3 class="text-xl font-bold mt-4">Opera</h3>
+        <ol class="list-decimal list-inside mb-4">
+            <li>Download the Genie AI extension zip file from the links above.</li>
+            <li>Extract the zip file to a folder on your computer.</li>
+            <li>Open Opera and go to <a href="opera://extensions/" class="text-blue-600 hover:underline">opera://extensions/</a>.</li>
+            <li>Enable <strong>Developer mode</strong> by toggling the switch in the top right corner.</li>
+            <li>Click on <strong>Load unpacked</strong> and select the folder where you extracted the extension.</li>
+        </ol>
+        
+        <p>Keep enjoying the enhanced capabilities of the Genie AI extension!</p>
+    </main>
+
+    <footer class="text-center py-8">
+        <p class="text-gray-500">
+            Developed by <span class="text-gray-600">Bytarch</span> - © <span id="currentYear"></span>
+        </p>
+    </footer>
+
+    <script>
+        // Update the current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        const showText = document.getElementById('showImageText');
+        
+        showText.addEventListener('click', () => {
+            Swal.fire({
+                title: 'Genie AI Extension',
+                imageUrl: 'assets/Screenshot from 2025-04-13 22-07-50.png',
+                imageAlt: 'Screenshot of Genie AI Extension',
+                showCloseButton: true,
+                focusConfirm: false,
+                confirmButtonText: 'Close'
+            });
+        });
+    </script>
+</body>
+</html>
